@@ -56,21 +56,6 @@ async def content_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     
     return await update.message.reply_text('Pilihan tidak ada / valid. Silahkan ketikkan kembali pilihan anda')
 
-# async def konsultasi(update:Update, context:ContextTypes.DEFAULT_TYPE):
-#     text_diterima: str = update.message.text
-#     text_diterima.lower()
-#     if 'bps k1' in text_diterima:
-#         await update.message.reply_photo('image/logo-or-header/konsul-1.png')
-#     elif 'bps k2' in text_diterima:
-#         await update.message.reply_photo('image/logo-or-header/konsul-2.png')
-#     elif 'bps k3' in text_diterima:
-#             await update.message.reply_photo('image/logo-or-header/konsul-3.png')
-#     elif 'bps k4' in text_diterima:
-#         await update.message.reply_photo('image/logo-or-header/konsul-4.png')
-#     elif 'bps k5' in text_diterima:
-#         await update.message.reply_photo('image/logo-or-header/konsul-5.png')
-#     else:
-#         menu_command()
 
 async def panduan_command(update:Update, context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Untuk mengakses menu pada chatbot ini, anda bisa mengetikkan /menu atau mengklik tombol menu di pojok kiri bawah')
