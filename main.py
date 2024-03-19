@@ -52,8 +52,8 @@ async def content_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     elif 'bps ag' in text_diterima:
         await update.message.reply_photo('image/statistik/sosial-dan-kependudukan/agama/Banyaknya Pondok Pesantren Menurut Kecamatan 2018-2020.png')
         await update.message.reply_photo('image/statistik/sosial-dan-kependudukan/agama/berangkat-haji-2011-2019.png')
-    elif 'bps gd' in text_diterima:
-        await update.message.reply_photo('')
+    # elif 'bps gd' in text_diterima:
+    #     await update.message.reply_photo('')
 
     return await update.message.reply_text('Pilihan tidak ada / valid. Silahkan ketikkan kembali pilihan anda')
 
