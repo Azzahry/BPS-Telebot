@@ -6,13 +6,10 @@ USERNAME_BOT = "BPSKABMALANG_bot"
 
 #initialize command
 async def start_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_photo(photo='image/logo-or-header/bps-logo.jpg', caption='Selamat datang.\nSaya adalah chat bot BPS. Silahkan ikuti panduan berikut untuk berinteraksi dengan chatbot. Klik /panduan')
+    await update.message.reply_photo(photo='image/logo-or-header/bps-logo.jpg', caption='Selamat datang.\nSaya adalah chat bot BPS. Silahkan ikuti panduan berikut untuk berinteraksi dengan chatbot\n-----------------------------------------------------------------------\nUntuk mengakses menu pada chatbot ini, anda bisa mengetikkan /menu atau mengklik tombol menu di pojok kiri bawah')
 
 async def dashboard_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_photo(photo='image/logo-or-header/bps-logo.jpg', caption='Selamat Datang \nChatbot BPS Kabupaten Malang\n-----------------------------------------------------------------------\nPilih Layanan Informasi : \n1. Pusat Statistik Terpadu (PST) Online \n2. Panduan Konsultasi Statistik \n3. Data Statistik \n4. Pojok Statistik\n5. Saran dan Pengaduan\n-----------------------------------------------------------------------\nUntuk memilih layanan, silahkan ketikkan format berikut: /bps (pilihan anda).\nContoh :/bps 1')
-
-async def panduan_command(update:Update, context:ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_photo(photo='image/logo-or-header/guide-logo.jpg', caption='Untuk mengakses menu pada chatbot ini, anda bisa mengetikkan /menu atau mengklik tombol menu di pojok kiri bawah')
 
 async def error(update:Update, context: ContextTypes.DEFAULT_TYPE):
     print(f'error : {context.error}')
@@ -163,7 +160,6 @@ if __name__ == '__main__':
     #main_command
     application.add_handler(CommandHandler('start', start_command))
     application.add_handler(CommandHandler('menu', dashboard_command))
-    application.add_handler(CommandHandler('panduan', panduan_command))
     application.add_handler(CommandHandler('bps', content_command))
 
     #content_command
