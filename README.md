@@ -1,6 +1,6 @@
 ![image](https://github.com/Azzahry/bps-telebot/blob/master/image/logo-or-header/bps-logo.jpg)
 
-#Badan Pusat Statistik Telegram Bot Guide
+# **Badan Pusat Statistik Telegram Bot Guide**
 
 **How To Use**
 * Akun telegram bot BPS dapat diakses melalui @BPSKABMALANG_bot
