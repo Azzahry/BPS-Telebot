@@ -17,16 +17,16 @@ async def error(update:Update, context: ContextTypes.DEFAULT_TYPE):
 
 #content menu
 async def pst_menu(update: Update):
-    await update.message.reply_photo(photo='image/logo-or-header/logo-pst.png', caption='Selamat Datang! \nPelayanan Statistik Terpadu (PST) Online 📲 \n----------------\nBerikut link website PST Online : http://perpustakaan.bps.go.id \n----------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
+    await update.message.reply_photo(photo='image/logo-or-header/logo-pst.png', caption='Selamat Datang! \nPelayanan Statistik Terpadu (PST) Online \n----------------\nBerikut link website PST Online : http://perpustakaan.bps.go.id \n----------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
 
 async def data_statistik(update: Update):
-    await update.message.reply_photo(photo='image/logo-or-header/statistics-header.jpg', caption='Selamat Datang! \nData Statistik 📊 \nData Statistik merupakan layanan informasi mengenai pendataan BPS Kabupaten Malang\n----------------\nPilih Layanan Informasi : \n• Sosial dan kependudukan [sk] \n• Ekonomi dan Perdagangan [ep] \n• Pertanian dan Pertambangan [pp] \n----------------\nUntuk memilih layanan, silahkan ketikkan format berikut: /bps (pilihan anda).\n Contoh :/bps sk')
+    await update.message.reply_photo(photo='image/logo-or-header/statistics-header.jpg', caption='Selamat Datang! \nData Statistik \nData Statistik merupakan layanan informasi mengenai pendataan BPS Kabupaten Malang\n----------------\nPilih Layanan Informasi : \n• Sosial dan kependudukan [sk] \n• Ekonomi dan Perdagangan [ep] \n• Pertanian dan Pertambangan [pp] \n----------------\nUntuk memilih layanan, silahkan ketikkan format berikut: /bps (pilihan anda).\n Contoh :/bps sk')
 
 async def pojok_statistik(update: Update):
-    await update.message.reply_photo(photo='image/logo-or-header/pojokstatistik.png', caption='Selamat Datang! \nLayanan Pojok Statistik 📊 \n----------------\nSilahkan hubungi nomor berikut: \nhttps://wa.me/6289654993852 \n----------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
+    await update.message.reply_photo(photo='image/logo-or-header/pojokstatistik.png', caption='Selamat Datang! \nLayanan Pojok Statistik \n----------------\nSilahkan hubungi nomor berikut: \nhttps://wa.me/6289654993852 \n----------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
 
 async def saran_pengaduan(update: Update):
-    await update.message.reply_photo(photo='image/logo-or-header/complain-logo.jpg', caption='Selamat Datang! \nSaran dan Pengaduan 📊 \n----------------\nUntuk saran dan pengaduan anda, mengirimkan ke alamat email berikut ini: \npengaduan3507@bps.go.id \n---------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
+    await update.message.reply_photo(photo='image/logo-or-header/complain-logo.jpg', caption='Selamat Datang! \nSaran dan Pengaduan \n----------------\nUntuk saran dan pengaduan anda, mengirimkan ke alamat email berikut ini: \npengaduan3507@bps.go.id \n---------------\nKlik atau ketikkan /menu untuk kembali ke halaman menu')
 #-----------------------------------------
 
 #sub-content function
@@ -133,7 +133,7 @@ async def content_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     if 'bps 1' in text_diterima:
         await pst_menu(update)
     elif 'bps 2' in text_diterima:
-        await update.message.reply_text('Selamat Datang! \nPanduan Konsultasi Statistik Online & Offline 📲 \n----------------\nPilih Layanan Konsultasi : \n1. Standar Pelayanan Rekomendasi Kegiatan Statistik Sektoral  \n2. Standar Pelayanan Perpustakaan  \n3. Standar Pelayanan Konsultasi Data Statistik  \n4. Standar Pelayanan Penjualan Produk BPS  \n5 Daftar Jenis & Tarif Penerimaan Negara Bukan Pajak BPS  \n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /ks (pilihan anda)\n Contoh : /ks 1')
+        await update.message.reply_text('Selamat Datang! \nPanduan Konsultasi Statistik Online & Offline \n----------------\nPilih Layanan Konsultasi : \n1. Standar Pelayanan Rekomendasi Kegiatan Statistik Sektoral  \n2. Standar Pelayanan Perpustakaan  \n3. Standar Pelayanan Konsultasi Data Statistik  \n4. Standar Pelayanan Penjualan Produk BPS  \n5 Daftar Jenis & Tarif Penerimaan Negara Bukan Pajak BPS  \n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /ks (pilihan anda)\n Contoh : /ks 1')
         await konsultasi_statistik(update, context)
     elif 'bps 3' in text_diterima:
         await data_statistik(update)
@@ -142,13 +142,13 @@ async def content_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     elif 'bps 5' in text_diterima:
         await saran_pengaduan(update)
     elif 'bps sk' in text_diterima:
-        await update.message.reply_text('Selamat Datang! \nSosial dan Kependudukan 👨‍👩‍👧‍👦 \n----------------\nPilih Layanan Informasi : \n1. Agama\n2. Gender\n3. Geografi\n4. Iklim\n5. Indeks Pembangunan Manusia\n6. Kemiskinan dan Ketimpangan \n7. Kependudukan\n8. Kesehatan\n9. Konsumsi dan Pengeluaran\n10. Lingkungan Hidup\n11. Pemerintahan\n12. Pendidikan\n13. Perumahan\n14. Politik dan Keamanan\n15. Sosial Budaya\n16. Tenaga Kerja\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /sk (pilihan anda)\n Contoh : /sk 1')
+        await update.message.reply_text('Selamat Datang! \nSosial dan Kependudukan  \n----------------\nPilih Layanan Informasi : \n1. Agama\n2. Gender\n3. Geografi\n4. Iklim\n5. Indeks Pembangunan Manusia\n6. Kemiskinan dan Ketimpangan \n7. Kependudukan\n8. Kesehatan\n9. Konsumsi dan Pengeluaran\n10. Lingkungan Hidup\n11. Pemerintahan\n12. Pendidikan\n13. Perumahan\n14. Politik dan Keamanan\n15. Sosial Budaya\n16. Tenaga Kerja\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /sk (pilihan anda)\n Contoh : /sk 1')
         await sosial_kependudukan(update, context)
     elif 'bps ep' in text_diterima:
-        await update.message.reply_text('Selamat Datang! \nEkonomi dan Perdagangan      \n----------------\nPilih Layanan Informasi : \n1. Ekspor-Impor\n2. Energi\n3. Harga Eceran\n4. Harga Produsen\n5. Industri\n6. Inflasi\n7. Keuangan\n8. Komunikasi\n9. Pariwisata\n10. Produk Domestik Regional Bruto\n11. Transportasi\n12. Upah Buruh\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /ep (pilihan anda)\nContoh : /ep 1')
+        await update.message.reply_text('Selamat Datang! \nEkonomi dan Perdagangan  \n----------------\nPilih Layanan Informasi : \n1. Ekspor-Impor\n2. Energi\n3. Harga Eceran\n4. Harga Produsen\n5. Industri\n6. Inflasi\n7. Keuangan\n8. Komunikasi\n9. Pariwisata\n10. Produk Domestik Regional Bruto\n11. Transportasi\n12. Upah Buruh\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /ep (pilihan anda)\nContoh : /ep 1')
         await ekonomi_perdagangan(update, context)
     elif 'bps pp' in text_diterima:
-        await update.message.reply_text('Selamat Datang! \nEkonomi dan Perdagangan      \n----------------\nPilih Layanan Informasi : \n1 Holtikultura\n2. Kehutanan\n3. Perikanan\n4. Perkebunan\n5. Pertambangan\n6. Peternakan\n7. Tanaman Pangan\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /pp (pilihan anda)\nContoh : /pp 1')
+        await update.message.reply_text('Selamat Datang! \nPertanian dan Pertambangan  \n----------------\nPilih Layanan Informasi : \n1 Holtikultura\n2. Kehutanan\n3. Perikanan\n4. Perkebunan\n5. Pertambangan\n6. Peternakan\n7. Tanaman Pangan\n----------------\nUntuk memilih, silahkan ketik dengan format berikut : /pp (pilihan anda)\nContoh : /pp 1')
         await pertanian_pertambangan(update, context)
     else:
         await update.message.reply_text('Pilihan tidak ada / valid. Silahkan ketikkan kembali pilihan anda (CONTENT COMMAND)')
