@@ -6,7 +6,7 @@ USERNAME_BOT = "BPSKABMALANG_bot"
 
 #initialize command
 async def start_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_photo(caption='Selamat datang.\nSaya adalah chat bot BPS. Silahkan ikuti panduan berikut untuk berinteraksi dengan chatbot\n----------------\nUntuk mengakses menu pada chatbot ini, anda bisa mengetikkan /menu atau mengklik tombol menu di pojok kiri bawah')
+    await update.message.reply_photo(photo='image/logo-or-header/bps-logo.jpg',caption='Selamat datang.\nSaya adalah chat bot BPS. Silahkan ikuti panduan berikut untuk berinteraksi dengan chatbot\n----------------\nUntuk mengakses menu pada chatbot ini, anda bisa mengetikkan /menu atau mengklik tombol menu di pojok kiri bawah')
 
 async def dashboard_command(update:Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Selamat Datang \nChatbot BPS Kabupaten Malang\n----------------\nPilih Layanan Informasi : \n1. Pusat Statistik Terpadu (PST) Online \n2. Panduan Konsultasi Statistik \n3. Data Statistik \n4. Pojok Statistik\n5. Saran dan Pengaduan\n----------------\nUntuk memilih layanan, silahkan ketikkan format berikut: /bps (pilihan anda).\nContoh :/bps 1')
